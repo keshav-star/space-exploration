@@ -18,6 +18,13 @@ const Blog = () => {
     setLoading(false);
   };
 
+  const paginate = (pageNumber) => {
+    if (pageNumber < 1) pageNumber = 1;
+    if (pageNumber > data.total) pageNumber = data.total;
+
+    setCurrentIndex(pageNumber);
+  };
+
   const handleSearch = (e) => {
     const { value } = e.target;
     const tempData = data?.posts?.filter((item) => {
@@ -33,7 +40,8 @@ const Blog = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [currentIndex]);
+
   return (
     <div className="min-h-[90vh] px-20 py-5">
       <img
@@ -85,22 +93,40 @@ const Blog = () => {
         )}
       </div>
       <div className="flex items-center justify-end mt-4">
-        <button className="border-2 border-white px-2 p-1 hover:bg-opacity-65 rounded mx-1 me-3 bg-[#7a6a4a] bg-opacity-6">Prev Page</button>
+        <button
+          className="border-2 border-white px-2 p-1 hover:bg-opacity-65 rounded mx-1 me-3 bg-[#7a6a4a] bg-opacity-6"
+          onClick={() => paginate(currentIndex - 1)}
+          disabled={currentIndex === 1}
+        >
+          Prev Page
+        </button>
         {Array.from({ length: data.total })
-          .slice(0, 3)
+          .slice(
+            currentIndex > 2 ? currentIndex - 2 : 1,
+            currentIndex >= data.total + 2 ? data.total : currentIndex + 2
+          )
           .map((_, index) => (
             <p
-              className="border-2 cursor-pointer hover:bg-opacity-85 border-white px-1 rounded mx-1 bg-[#7a6a4a] bg-opacity-65"
+              className={`border-2 cursor-pointer hover:bg-opacity-85 border-white px-1 rounded mx-1 bg-[#7a6a4a] bg-opacity-65 ${
+                currentIndex === index + currentIndex ? "bg-red-400" : ""
+              } `}
               onClick={() => {
+                paginate(currentIndex + index);
                 fetchData();
-                setCurrentIndex(index + 1);
               }}
             >
-              {index + 1}
+              {console.log(currentIndex + index)}
+              {currentIndex + index}
             </p>
           ))}
         ..
-        <button className="ms-3 border-2 border-white px-2 p-1 hover:bg-opacity-65 rounded mx-1 bg-[#7a6a4a] bg-opacity-6">Next Page</button>
+        <button
+          className="ms-3 border-2 border-white px-2 p-1 hover:bg-opacity-65 rounded mx-1 bg-[#7a6a4a] bg-opacity-6"
+          onClick={() => paginate(currentIndex + 1)}
+          disabled={currentIndex === data.total}
+        >
+          Next Page
+        </button>
       </div>
     </div>
   );

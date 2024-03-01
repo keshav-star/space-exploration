@@ -18,7 +18,12 @@ export const AuthContextProvider = ({ children }) => {
     try {
       const encryptedData = localStorage.getItem("login-token");
       if (encryptedData) {
-        return JSON.parse(encryptedData)
+        const decryptedData = JSON.parse(encryptedData);
+        return {
+          name: decryptedData.name,
+          isAuthenticated: true,
+        };
+        //check error for where isAuthenticated is set True
       }
       return {
         isAuthenticated: false,
@@ -33,9 +38,22 @@ export const AuthContextProvider = ({ children }) => {
 
   const setAuthData = (data) => {
     try {
-      setAuthValue(data);
-      if (typeof window !== "undefined") {
-        localStorage.setItem("login-token", JSON.stringify(data));
+      const decryptedData = JSON.parse(localStorage.getItem("reg_users"));
+      if (
+        decryptedData?.email === data?.cred?.email &&
+        decryptedData?.password === data?.cred?.password
+      ) {
+        const d = {
+          name: decryptedData?.name,
+          isAuthenticated: true,
+        };
+        setAuthValue(d);
+        if (typeof window !== "undefined") {
+          localStorage.setItem(
+            "login-token",
+            JSON.stringify({ code: data?.code, name: decryptedData?.name})
+          );
+        }
       }
     } catch (error) {
       console.error("Error setting authData:", error);

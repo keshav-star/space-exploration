@@ -7,7 +7,7 @@ const AuthLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="min-h-[calc(100vh-160px)]">{children}</main>
       <Footer />
     </>
   );

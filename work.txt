@@ -4,7 +4,6 @@ for register add them to file
 search fxn on all data
 pagination
 formic yup
-theme dark and light
 
 loader on pages and api
 

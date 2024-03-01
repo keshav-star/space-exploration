@@ -9,7 +9,7 @@ const useAuth = () => {
   const isAuthenticated = authData?.isAuthenticated ?? false;
 
   const loginUser = (data) => {
-    setAuthData({ ...data, isAuthenticated: true });
+    setAuthData(data);
     const redirectUrl = state?.from || "/";
     navigate(redirectUrl);
   };
