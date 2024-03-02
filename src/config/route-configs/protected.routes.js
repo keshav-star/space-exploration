@@ -20,5 +20,10 @@ export const protectedRoutes = [
         title:"MARS",
         path:"/mars",
         component: lazy(()=>import('../../pages/nav-page/Mars'))
+    },
+    {
+        title:"QUIZ",
+        path:"/quiz",
+        component: lazy(()=>import('../../pages/nav-page/Quiz'))
     }
 ]

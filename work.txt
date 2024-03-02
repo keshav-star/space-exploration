@@ -1,14 +1,10 @@
-proper login and register
-for register add them to file
-
-search fxn on all data
-pagination
-formic yup
-
-loader on pages and api
-
-api work  hook for fetching
 
 bug while activating link in navbar
-
 add quiz if can
+
+loader on pages and api
+images loading
+
+unknown route
+skeleton laoding image, no data found 
+404 

@@ -20,6 +20,7 @@ const useAuth = () => {
       localStorage.removeItem("login-token");
     });
     navigate("/login");
+    window.location.href = 'login'
   };
 
   return { authData, isAuthenticated, loginUser, logoutUser };

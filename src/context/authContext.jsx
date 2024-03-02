@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import PropTypes from "prop-types";
+import { message } from "antd";
 
 const AuthContext = createContext({
   authData: {
@@ -54,6 +55,9 @@ export const AuthContextProvider = ({ children }) => {
             JSON.stringify({ code: data?.code, name: decryptedData?.name})
           );
         }
+      }
+      else{
+        message.warning("Credentials not found")
       }
     } catch (error) {
       console.error("Error setting authData:", error);

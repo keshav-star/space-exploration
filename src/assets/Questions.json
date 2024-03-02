@@ -1,0 +1,30 @@
+{
+    "questions": [
+      {
+        "question": "What is the diameter of Mars?",
+        "options": ["6,779 kilometers", "12,742 kilometers", "5,000 kilometers", "8,000 kilometers"],
+        "correctOptionIndex": 0
+      },
+      {
+        "question": "Which rover was the first to successfully land on Mars?",
+        "options": ["Opportunity", "Curiosity", "Spirit", "Sojourner"],
+        "correctOptionIndex": 3
+      },
+      {
+        "question": "Which gas is the most abundant in Mars' atmosphere?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Methane"],
+        "correctOptionIndex": 1
+      },
+      {
+        "question": "What are the two moons of Mars called?",
+        "options": ["Phobos and Deimos", "Europa and Ganymede", "Titan and Enceladus", "Io and Callisto"],
+        "correctOptionIndex": 0
+      },
+      {
+        "question": "What is the average temperature on the surface of Mars?",
+        "options": ["-50 degrees Celsius", "-20 degrees Celsius", "-80 degrees Celsius", "20 degrees Celsius"],
+        "correctOptionIndex": 2
+      }
+    ]
+  }
+  
