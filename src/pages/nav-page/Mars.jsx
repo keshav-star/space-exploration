@@ -151,7 +151,9 @@ const Mars = () => {
               />
             ))
           ) : (
-            <img src="AXk.svg" className="w-[20vw]" alt="" />
+            <img src="AXk.svg"  className="w-[90vw] md:w-[20vw]"
+            loading="lazy"
+            alt="" />
           )
         ) : (
           data?.data?.photos

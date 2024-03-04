@@ -23,7 +23,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="flex flex-col md:flex-row md:flex-wrap justify-evenly md:px-28 bg-[#AEA085] bg-opacity-60">
-        <div className="relative">
+        <div className="relative hover:rotate-3 transition">
           <img src="bg/bg2.jpg" className="w-[90vw] md:w-[15vw] m-5" alt="" />
           <p className="absolute bg-black px-4 py-2 bg-opacity-60 rounded bottom-10 flex left-[40%] translate-x-[-30%] hover:bg-opacity-90 cursor-pointer">
             MARS ROVER
@@ -45,19 +45,19 @@ const Home = () => {
             Explore Top Posts <FaArrowRight className="text-xl mx-2" />
           </Link>
         </div>
-        <div className="relative">
+        <div className="relative hover:-rotate-3 transition">
           <img src="bg/bg2.jpg" className="w-[90vw] md:w-[15vw] m-5" alt="" />
           <p className="absolute bg-black px-4 py-2 bg-opacity-60 rounded bottom-10 flex left-[40%] translate-x-[-30%] hover:bg-opacity-90 cursor-pointer">
             MARS ROVER
           </p>
         </div>
-        <div className="relative">
+        <div className="relative hover:rotate-3 transition">
           <img src="bg/bg2.jpg" className="w-[90vw] md:w-[15vw] m-5" alt="" />
           <p className="absolute bg-black px-4 py-2 bg-opacity-60 rounded bottom-10 flex left-[40%] translate-x-[-30%] hover:bg-opacity-90 cursor-pointer">
             MARS ROVER
           </p>
         </div>
-        <div className="relative">
+        <div className="relative  hover:-rotate-3 transition">
           <img src="bg/bg2.jpg" className="w-[90vw] md:w-[15vw] m-5" alt="" />
           <p className="absolute bg-black px-4 py-2 bg-opacity-60 rounded bottom-10 flex left-[40%] translate-x-[-30%] hover:bg-opacity-90 cursor-pointer">
             MARS ROVER

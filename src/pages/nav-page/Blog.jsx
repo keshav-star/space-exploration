@@ -1,6 +1,4 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Loader from "../../components/ui/Loader";
 import { CiSearch } from "react-icons/ci";
 import useQuery from "../../hooks/useQuery";
 import { apiLimitBlogPosts } from "../../services/blog.api";
@@ -87,7 +85,9 @@ const Blog = () => {
             );
           })
         ) : filteredData?.length === 0 ? (
-          <div className="text-xl">No Match Found</div>
+          <img src="AXk.svg"  className="w-[90vw] md:w-[20vw]"
+          loading="lazy"
+          alt="" />
         ) : (
           filteredData &&
           filteredData?.slice(-8).map((subitem) => {
@@ -128,6 +128,7 @@ const Blog = () => {
           )
           .map((_, index) => (
             <p
+            key={index}
               className={`border-2 cursor-pointer hover:bg-opacity-85 border-white px-1 rounded mx-1 bg-[#7a6a4a] bg-opacity-65 ${
                 currentIndex === index + currentIndex ? "bg-red-400" : ""
               } `}
