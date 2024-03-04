@@ -44,7 +44,7 @@ const Blog = () => {
   }, [currentIndex]);
 
   return (
-    <div className="min-h-[90vh] px-5 md:px-20 py-5">
+    <div className="min-h-[90vh] px-5 md:px-10 lg:px-20 py-5">
       <img
         src="/bg/bg3.jpg"
         loading="lazy"
@@ -94,7 +94,7 @@ const Blog = () => {
             return (
               <div
                 key={subitem.id}
-                className={`border-2 bg-opacity-60 hover:bg-opacity-100 transition-all duration-400 p-4 py-4 my-2 md:w-[20vw] rounded bg-[#7a6a4a] hover:scale-105 cursor-pointer select-none`}
+                className={`border-2 bg-opacity-60 hover:bg-opacity-100 transition-all duration-400 p-4 py-4 my-2 md:w-[27vw] lg:w-[20vw] rounded bg-[#7a6a4a] hover:scale-105 cursor-pointer select-none`}
               >
                 <h2
                   title={subitem.title}

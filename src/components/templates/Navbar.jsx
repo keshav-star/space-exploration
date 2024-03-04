@@ -10,8 +10,8 @@ const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const { logoutUser, authData } = useAuth();
   return (
-    <nav className="p-3 mt-1 md:px-16 flex flex-col md:flex-row  items-center justify-between text-white ">
-      <NavLink className="flex items-center text-md md:text-2xl font-semibold" to={'/'}>
+    <nav className="p-3 mt-1 md:px-8 lg:px-16 flex flex-col md:flex-row  items-center justify-between text-white ">
+      <NavLink className="flex items-center text-md md:text-lg lg:text-2xl font-semibold" to={'/'}>
         <img src="images/mars.png" className="w-10 md:w-12 me-2" alt="" />
         <p className="text-white">SPACE EXPLORATION</p>
       </NavLink>
@@ -79,7 +79,7 @@ const Navbar = () => {
       </ul>
       
       <div className="flex items-center mt-4 md:mt-0 w-full md:w-[unset] justify-between md:justify-normal">
-        <div className="me-8 text-lg hidden md:block">
+        <div className="me-8 text-lg hidden welcome-name">
           Welcome ,<span className="text-[#ff9d4c] "> {authData.name}</span>
         </div>
         <button

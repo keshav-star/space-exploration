@@ -140,7 +140,7 @@ const Mars = () => {
       </div>
       <div className="p-2 md:p-5 flex flex-wrap md:mx-28">
         {!data?.data || data?.data?.photos?.length === 0 ? (
-          isLoading || isRefetching || data?.data?.photos.length===0 ? (
+          isLoading || isRefetching  ? (
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
               <img
                 key={item}
@@ -151,7 +151,7 @@ const Mars = () => {
               />
             ))
           ) : (
-            <h2 className="text-2xl text-black">No Data Found</h2>
+            <img src="AXk.svg" className="w-[20vw]" alt="" />
           )
         ) : (
           data?.data?.photos

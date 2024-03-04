@@ -13,7 +13,7 @@
   /* text-decoration: underline; */
   /* text-underline-offset: 3px; */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .mobile-nav {
     position: absolute;
     padding-top: 2rem;
@@ -38,5 +38,10 @@
     left: 0;
     transition: all 500ms ease-in-out;
     transform: translateX(-95vw);
+  }
+}
+@media screen and (min-width:1124px) {
+  .welcome-name{
+    display: block !important;
   }
 }
