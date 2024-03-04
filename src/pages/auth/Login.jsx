@@ -150,6 +150,7 @@ const Register = ({ toogle }) => {
           setIsLoading(false);
         }, 2000);
         action.resetForm();
+        toogle();
       },
     });
 
