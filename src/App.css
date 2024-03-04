@@ -40,8 +40,30 @@
     transform: translateX(-95vw);
   }
 }
-@media screen and (min-width:1124px) {
-  .welcome-name{
+@media screen and (min-width: 1124px) {
+  .welcome-name {
     display: block !important;
   }
+}
+
+.animated-button-dark {
+  background: linear-gradient(to left, #eeefef 50%, #58381C 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1s ease;
+}
+.animated-button-dark:hover {
+  background-position: right bottom;
+  color: #58381C;
+}
+.animated-button-light {
+  background: linear-gradient(to left, #58381C 50%, #eeefef 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1s ease;
+  color: #58381C;
+}
+.animated-button-light:hover {
+  background-position: right bottom;
+  color: #fff;
 }

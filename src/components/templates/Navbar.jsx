@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => logoutUser()}
-          className="text-[#1E2E38] bg-white hover:text-white hover:bg-white hover:bg-opacity-30 p-1 px-3 rounded md:text-lg"
+          className="animated-button-light p-1 px-3 rounded md:text-lg"
         >
           Log out
         </button>

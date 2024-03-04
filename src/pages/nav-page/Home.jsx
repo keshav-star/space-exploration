@@ -39,10 +39,10 @@ const Home = () => {
             respectively.
           </p>
           <Link
-            to={"/blog"}
+            to={"/quiz"}
             className="border-2 hover:border-white p-1 px-4 my-4 text-lg font-semibold flex items-center rounded transition-all delay-250 ease-in bg-[#7e6249] hover:text-[#7e6249] hover:bg-transparent w-fit mx-auto text-white border-slate-300"
           >
-            Explore Top Posts <FaArrowRight className="text-xl mx-2" />
+            Test Your Knowledge <FaArrowRight className="text-xl mx-2" />
           </Link>
         </div>
         <div className="relative hover:-rotate-3 transition">

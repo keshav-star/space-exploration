@@ -32,10 +32,10 @@ const Apod = () => {
         //Loading template for apod
         <div className="flex flex-col md:flex-row text-white md:px-28 justify-between my-4 md:mt-20 md:w-[100vw]">
           <div className="m-5 bg-[#58381C] bg-opacity-40 rounded p-4 md:p-10 ">
-            <h2 className="text-xl md:text-4xl font-semibold text-center mb-8 bg-[#A29575] rounded text-[#A29575]">
+            <h2 className="animate-pulse text-xl md:text-4xl font-semibold text-center mb-8 bg-[#A29575] rounded text-[#A29575]">
               Lorem, ipsum.
             </h2>
-            <p className="text-sm md:text-lg font-light line-clamp-6 bg-[#A29575] rounded text-[#A29575]">
+            <p className="animate-pulse text-sm md:text-lg font-light line-clamp-6 bg-[#A29575] rounded text-[#A29575]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               suscipit, molestiae consequuntur repudiandae laudantium voluptates
               id doloribus iste similique? Eos quibusdam accusantium accusamus
@@ -44,12 +44,12 @@ const Apod = () => {
               ratione eos!
             </p>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-4 md:mt-14">
-              <div className="mt-5 text-lg bg-[#A29575] rounded text-[#A29575]">
+              <div className="animate-pulse mt-5 text-lg bg-[#A29575] rounded text-[#A29575]">
                 Dated: <span className="">1291-13-21</span>
               </div>
               <button
                 onClick={() => refetch()}
-                className="bg-[#A29575] text-[#A29575] rounded shadow-lg  px-3 p-1 mt-4 me-10 hover:filter text-lg"
+                className="animate-pulse bg-[#A29575] text-[#A29575] rounded shadow-lg  px-3 p-1 mt-4 me-10 hover:filter text-lg"
               >
                 Next Post
               </button>
@@ -58,7 +58,7 @@ const Apod = () => {
           <img
             src={"images/placeholder-image.png"}
             loading="lazy"
-            className="w-[90vw] md:w-[40vw] md:h-[30vw] m-5 bg-[#A29575] "
+            className="animate-pulse w-[90vw] md:w-[40vw] md:h-[30vw] m-5 bg-[#A29575] "
           />
         </div>
       ) : (
@@ -76,7 +76,7 @@ const Apod = () => {
               </div>
               <button
                 onClick={() => refetch()}
-                className=" rounded shadow-lg w-fit mx-auto bg-[#e5dacf] text-[#58381C]  px-3 p-1 mt-4 md:me-10 hover:filter text-lg"
+                className=" rounded shadow-lg w-fit mx-auto animated-button-light  px-3 p-1 mt-4 md:me-10  text-lg"
               >
                 Next Post
               </button>

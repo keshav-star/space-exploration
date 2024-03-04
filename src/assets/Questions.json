@@ -8,7 +8,7 @@
       {
         "question": "Which rover was the first to successfully land on Mars?",
         "options": ["Opportunity", "Curiosity", "Spirit", "Sojourner"],
-        "correctOptionIndex": 3
+        "correctOptionIndex": 2
       },
       {
         "question": "Which gas is the most abundant in Mars' atmosphere?",
@@ -22,7 +22,7 @@
       },
       {
         "question": "What is the average temperature on the surface of Mars?",
-        "options": ["-50 degrees Celsius", "-20 degrees Celsius", "-80 degrees Celsius", "20 degrees Celsius"],
+        "options": ["-80 degrees Celsius", "-20 degrees Celsius", "-50 degrees Celsius", "20 degrees Celsius"],
         "correctOptionIndex": 2
       }
     ]

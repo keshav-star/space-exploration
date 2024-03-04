@@ -76,11 +76,11 @@ const Blog = () => {
               >
                 <h2
                   target="_blank"
-                  className="text-xl line-clamp-1 text-[#A29575] bg-[#A29575] font-semibold "
+                  className="animate-pulse text-xl line-clamp-1 text-[#A29575] bg-[#A29575] font-semibold "
                 >
                   Lorem ipsum dolor sit amet.
                 </h2>
-                <p className="line-clamp-6 mt-3 text-sm bg-[#A29575] text-[#A29575]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia omnis incidunt atque quidem perspiciatis dicta blanditiis! Quaerat vitae sequi dicta quas, asperiores rerum fugit, esse ullam temporibus molestias nam commodi.</p>
+                <p className="animate-pulse line-clamp-6 mt-3 text-sm bg-[#A29575] text-[#A29575]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia omnis incidunt atque quidem perspiciatis dicta blanditiis! Quaerat vitae sequi dicta quas, asperiores rerum fugit, esse ullam temporibus molestias nam commodi.</p>
               </div>
             );
           })

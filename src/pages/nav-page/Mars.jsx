@@ -145,7 +145,7 @@ const Mars = () => {
               <img
                 key={item}
                 src={"/images/placeholder-image.png"}
-                className="w-[90vw] md:w-56 m-2 bg-[#A29575] "
+                className="animate-pulse w-[90vw] md:w-56 m-2 bg-[#A29575] "
                 loading="lazy"
                 alt=""
               />
