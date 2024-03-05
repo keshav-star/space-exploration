@@ -74,13 +74,13 @@ const Quiz = () => {
           <Stack direction="row" spacing={2} sx={{ marginBottom: 4 }}>
             <FormLabel
               id="demo-radio-buttons-group-label"
-              sx={{ fontSize: "1.4rem", color: "white" }}
+              sx={{ fontSize: "1.4rem", color: "white !important" }}
             >
               {quesNum + 1}
             </FormLabel>
             <FormLabel
               id="demo-radio-buttons-group-label"
-              sx={{ fontSize: "1.4rem", color: "white" }}
+              sx={{ fontSize: "1.4rem", color: "white !important" }}
             >
               {qn.questions[quesNum].question}
             </FormLabel>
@@ -124,6 +124,7 @@ const Quiz = () => {
           <Button
             variant="contained"
             sx={{
+              cursor: quesNum === 0 ? 'not-allowed' : 'pointer',
               bgcolor: "#908263",
               "&:hover": {
                 bgcolor: "rgba(162, 139, 107, 0.6)",
@@ -136,6 +137,7 @@ const Quiz = () => {
           <Button
             variant="contained"
             sx={{
+              cursor: quesNum === 4 ? 'not-allowed' : 'pointer',
               bgcolor: "#908263",
               "&:hover": {
                 bgcolor: "rgba(162, 139, 107, 0.6)",
