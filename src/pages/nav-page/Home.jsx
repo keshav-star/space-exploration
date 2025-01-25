@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Explore3D from "./components/Explore3D";
 
 const Home = () => {
   return (
@@ -64,6 +65,8 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      <Explore3D />
     </div>
   );
 };
